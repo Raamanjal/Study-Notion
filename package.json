@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "cloudinary": "^2.7.0",
+    "cors": "^2.8.5",
+    "crypto": "^1.0.1",
+    "dotenv": "^17.2.2",
+    "express-fileupload": "^1.5.2",
+    "razorpay": "^2.9.6"
+  }
+}
