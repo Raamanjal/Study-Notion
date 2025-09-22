@@ -16,6 +16,10 @@ const userSchema=new mongoose.Schema({
             required:true,
             trim:true,
         },
+        password:{
+            type:String,
+            required:true,
+        },
         accountType:{
             type:String,
             required:true,
@@ -25,6 +29,14 @@ const userSchema=new mongoose.Schema({
             type:mongoose.Schema.Types.ObjectId,
             ref:"Profile",
             required:true,
+        },
+        active:{
+            type:Boolean,
+            default:true,
+        },
+        approved:{
+            type:Boolean,
+            default:true,
         },
         courses:[{
             type:mongoose.Schema.Types.ObjectId,

@@ -1,7 +1,6 @@
-const SubSection = require("../models/Subsection");
 const Section = require("../models/Section");
 const Subsection = require("../models/Subsection");
-
+const { uploadImageToCloudinary } = require("../utils/imageUploader");
 
 //Create Subsection
 

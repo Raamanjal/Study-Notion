@@ -7,7 +7,7 @@ const jwt = require("jsonwebtoken");
 const cookie = require("cookie");
 
 //send OTP
-exports.sentOTP = async(req,res) =>{
+exports.sendOTP = async(req,res) =>{
     try{
         const {email} = req.body;
         const isUserPresent= await User.findOne({email});
@@ -40,6 +40,8 @@ exports.sentOTP = async(req,res) =>{
         //create entry in DB for otp
 
         const otpBody = await OTP.create(otpPayload);
+
+        
 
         res.status(200).json({
             success:true,

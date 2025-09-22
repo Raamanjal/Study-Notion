@@ -92,7 +92,7 @@ exports.capturePayment= async (req,res) =>{
 
     //authorization verify Signature
 
-exports.verfySignature = async (req,res) =>{
+exports.verifySignature = async (req,res) =>{
 
     const webhookSecret = "123456"; 
 
@@ -163,3 +163,10 @@ exports.verfySignature = async (req,res) =>{
     }
 }
 
+exports.sendPaymentSuccessEmail = async(req,res)=>{
+    console.log("under construction");
+}
+
+const enrollStudents = async (courses,userId,res)=>{
+    console.log("Under construction");
+}
